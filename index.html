@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <p>Jornal Web</p>
-        <p>As principais notícias do dia, em um só lugar.</p>
+    <header id="topo" class="cabecalho">
+        <h1>Jornal Web</h1>
+        <p class="slogan">As principais notícias do dia, em um só lugar.</p>
 
         <div class="acessibilidade">
-            <button onclick="aumentarFonte()">A+</button>
-            <button onclick="diminuirFonte()">A-</button>
-            <button onclick="alternarContraste()">Contraste</button>
+            <button type="button" onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button type="button" onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button id="botao-contraste" type="button" onclick="alternarContraste()" aria-pressed="false">Contraste</button>
         </div>  
     </header>
 
-    <nav>
+    <nav class="menu" aria-label="Navegação principal">
         <a href="#">Início</a>
         <a href="#">Economia</a>
         <a href="#">Tecnologia</a>
@@ -26,10 +26,10 @@
         <a href="#">Cultura</a>
     </nav>
 
-    <main>
-        <article>
-            <p>Economia brasileira mostra sinais de recuperação</p>
-            <p>Publicado em 09/10/2025</p>
+    <main id="conteudo-principal">
+        <article class="noticia">
+            <h2>Economia brasileira mostra sinais de recuperação</h2>
+            <p class="data">Publicado em 09/10/2025</p>
             <div>
                 <img src="https://cdls.org.br/wp-content/uploads/cdlce_base/2021/08/265919-redator-entregar-ate-2812-as-10heconomia-mundial-quais-sao-as-10-tendencias-para-os-proximos-anos.jpg" alt="">
 
@@ -40,9 +40,9 @@
             <p>Analistas acreditam que o crescimento das exportações de frutas como o morango do amor pode ser um indicativo de uma mudança mais ampla na economia, onde setores não convencionais e especializados encontram novas oportunidades no mercado global.</p>
         </article>
 
-        <article>
-            <p>Tecnologia: Avanços em Inteligência Artificial</p>
-            <p>Publicado em 09/10/2025</p>
+        <article class="noticia">
+            <h2>Tecnologia: Avanços em Inteligência Artificial</h2>
+            <p class="data">Publicado em 09/10/2025</p>
 
             <div>
                 <img src="https://br24.io/wp-content/uploads/2023/01/chatgpt.png" alt="">
@@ -57,9 +57,9 @@
             <p>Especialistas em ética e educação se mostram cautelosos, temendo que esse desenvolvimento possa transformar radicalmente o ensino superior, criando desafios para professores e instituições. Para muitos, a questão não é mais se as IAs são capazes de realizar trabalhos acadêmicos, mas sim como regular e lidar com a inteligência artificial no ambiente educacional, garantindo que a aprendizagem humana não seja substituída por máquinas.</p>
         </article>
 
-        <article>
-            <p>Esportes: Seleção vence semifinal por 2x1</p>
-            <p>Publicado em 09/10/2025</p>
+        <article class="noticia">
+            <h2>Esportes: Seleção vence semifinal por 2x1</h2>
+            <p class="data">Publicado em 09/10/2025</p>
 
             <div>
                 <img src="https://imagens.ebc.com.br/CXt8Xye-cHBQxiTettb2b0unX6M=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/selecao_brasileira_2022_pre_mundial.jpg?itok=_Hbw8MBs" alt="">

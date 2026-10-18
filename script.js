@@ -1,7 +1,7 @@
  // Funções de acessibilidade
 let tamanhoFonte = 100;
 let tamanhoMain = 800;
-let main = document.querySelector("main")
+let main = document.querySelector("#conteudo-principal");
 
 function aumentarFonte() {
 
@@ -22,5 +22,13 @@ function diminuirFonte() {
         }
         
     
+}
+
+function alternarContraste() {
+    document.body.classList.toggle("alto-contraste");
+
+    const botaoContraste = document.querySelector("#botao-contraste");
+    const contrasteAtivo = document.body.classList.contains("alto-contraste");
+    botaoContraste.setAttribute("aria-pressed", contrasteAtivo);
 }
 
