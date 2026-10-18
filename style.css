@@ -1,0 +1,110 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+/* Cabeçalho */
+header {
+    background-color: chartreuse;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.slogan {
+
+    margin-bottom: 10px;
+}
+
+.acessibilidade button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.acessibilidade button:hover {
+    
+}
+
+/* Menu de navegação */
+nav {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article h2 {
+    color: purple; 
+}
+
+
+
+
+article img{                            
+    max-width: 150px;
+}
+
+
+
+
+
+/* Rodapé */
+footer {
+    background-color:darkgoldenrod;
+    color: peru;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+
+
+/* Modo de alto contraste */
+.alto-contraste {
+    background-color: black !important;
+    color: white !important;
+}
+
+.alto-contraste header,
+.alto-contraste nav{
+    background-color: black !important;
+    color: yellow !important;
+}
+
+.alto-contraste a, 
+.alto-contraste h2, 
+.alto-contraste .data,
+.alto-contraste footer {
+    background-color: black !important;
+    color: white !important;
+}
